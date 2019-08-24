@@ -1,0 +1,109 @@
+body
+{
+	padding:0;
+	margin:0;
+    /*position: fixed;*/
+}
+#TITLE{
+	position:fixed;
+	color:lightgrey;
+	font-family: sans-serif;
+	font-weight: bold;
+	bottom:1vh;
+	right:2vw;
+	margin:0;
+}
+#game{
+	display:relative;
+}
+
+#columns{
+	display: inline-block;
+	position:fixed;
+	margin: 1vh auto 0 35%;
+	z-index:1;
+	border:2px solid rgb(241,241,241);
+}
+#preview{
+	position:fixed;
+	display: inline-block;
+	/*right: 20vw;*/
+	margin: 10vh 0 0 3vw;
+	border:2px solid rgb(241,241,241);
+	z-index:2;
+}
+
+
+#menu-toggle{
+	font-size:2em;
+	color: grey;
+	top:0;
+	right:2vw;
+	position:fixed;
+	display:inline;
+}
+
+#menu{
+	margin-left: -15px;
+	margin-top: 2vh;
+	font-size: 2em;
+}
+#designer{
+	color:grey;
+	position:absolute;
+	font-family:sans-serif;
+	font-weight:bold;
+	right:11px;
+	bottom:50px;
+}
+#force{
+	display:none;
+}
+#score{
+	position: fixed;
+	font-family: sans-serif;
+	color: lightgrey;
+	font-weight:bold;
+	top:1vh;
+	left:2vw;
+	margin:0px;
+}
+#end-game{
+	margin:0;
+	font-size:3em;
+	font-family:sans-serif;
+	color:grey;
+	font-weight:bold;
+}
+#final-score{
+	margin-top:1vh;
+	font-size:1.5em;
+	font-family:sans-serif;
+	color: grey;
+	font-weight:bold;
+}
+#scoreboard{
+	font-size:2em;
+	font-family:sans-serif;
+	color:grey;
+	font-weight:bold;
+}
+#loader{
+	font-size:1em;
+	font-family:sans-serif;
+	color:grey;
+	padding-bottom:20%;
+}
+#save{
+	cursor:pointer;
+
+}
+th{
+	color: silver;
+	
+}
+table.striped > tbody > tr:nth-child(odd) {
+ 
+  background-color: rgba(170, 213, 213, 0.2) !important;
+ 
+}
