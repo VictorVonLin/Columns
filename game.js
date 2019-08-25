@@ -437,6 +437,9 @@ class Columns{
 	}
 	switch(){
 		if (this._next != null && this.game._cell_list.length != 0 && this.game._swap == 0){
+			var landed = false
+			if(this.game._board[this.game._cell_row][this.game._cell_col].includes('|')){
+				landed = true}
 			var next = this._next
 			var current = this.game._cell_list
 			next = next.split(' ').slice(2)
@@ -446,8 +449,8 @@ class Columns{
 			for(let r=this.game._cell_row; r<this.game._cell_row+3; r++){
 				this.game._board[r][this.game._cell_col] = '['+this.game._cell_list[count]+']'
 				count++
-			this.game._swap = 1
-			}
+			}this.game._swap = 1
+			if (landed == true){this.game.land()}
 		}
 	}
 
@@ -579,8 +582,6 @@ function update(time=0){
 		test.game._dropInterval = 450
 	}else if(test.game._frozen == 54){
 		test.game._dropInterval = 250
-	}else if(test.game._frozen == 70){
-		test.game._dropInterval = 100
 	}
 
 	size_update()
@@ -601,8 +602,8 @@ function update(time=0){
 
 document.addEventListener('keydown',event=>{
 	if(test.game._running){
-		if(event.keyCode===15){
-			test.game.switch()
+		if(event.keyCode===13){
+			test.switch()
 		}
 		if(event.keyCode===37){
 			test.game.move_left()
