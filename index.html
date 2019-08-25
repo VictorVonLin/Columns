@@ -1,11 +1,11 @@
 <!DOCTYPE html>
   <html>
     <head>
-      <title>UI| ux.</title>
+      <title>Columns.io</title>
       <link rel="stylesheet" type="text/css" href="portfolio.css">
 	  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <link rel="shortcut icon" href="http://javascript-coder.com/wp-content/themes/thesis/lib/images/favicon.ico">
+      <link rel="shortcut icon" href="favicon.ico">
             <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="materialize.min.css"  media="screen,projection"/>
       <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -17,7 +17,7 @@
     	<div id = "game">
 
 	    	<canvas id="columns"></canvas>
-    		<canvas id="preview"></canvas>	
+    		<canvas id="preview" onclick="test.switch()"></canvas>	
         </div>
 		<a href="/" data-target="slide-out" class="sidenav-trigger" id="menu-toggle"><i class="material-icons">menu</i></a>
 
@@ -57,7 +57,7 @@
                 <h2 id="end-game">GameOver</h2>
                 <h3 id="final-score"></h3>
                 <div class="end-score"></div>
-                <form target="invisible" method="post" action="https://script.google.com/macros/s/AKfycbwnfHP8eGWwdsfA2NqwGftt6YU1j4n3j5OCMWMo1aVgww_X48w/exec" onsubmit="submission()">
+                <form id="form" target="invisible" method="post" action="https://script.google.com/macros/s/AKfycbwnfHP8eGWwdsfA2NqwGftt6YU1j4n3j5OCMWMo1aVgww_X48w/exec" onsubmit="submission()">
                   <div id="name-input" class="input-field">
                     <input type="text" id="user-name" name="Name" data-length="10" maxlength="10" minlength="3" required="">
                     <label for="user-name">Username</label>
@@ -65,7 +65,7 @@
                   <input id="force" name="Score">
                   <div class="modal-footer">
                     <input id="save" class="save-score waves-effect waves-light btn-small" type="submit" value="submit" >
-                    <a class="modal-close waves-effect btn-small white teal-text" onclick="test.game.new_game_board()">Restart</a>           
+                    <a class="modal-close waves-effect btn-small grey lighten-3 teal-text text-lighten-1" onclick="test.game.new_game_board()">Restart</a>           
                   </div>
                 </form>   
                 
