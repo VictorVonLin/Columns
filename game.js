@@ -36,6 +36,7 @@ function windowClose() {
 }
 function size_update(){
 	$("#designer").show()
+	document.getElementById("instruction").width = .8*$(".modal").width()
 	if(window.mobilecheck()){
 		if(window.innerHeight > window.innerWidth){
 			$("#score").css("font-size","5vw")
@@ -580,8 +581,8 @@ function update(time=0){
 		test.game._dropInterval = 600
 	}else if(test.game._frozen == 36){
 		test.game._dropInterval = 450
-	}else if(test.game._frozen == 54){
-		test.game._dropInterval = 250
+	}else if(test.game._frozen == 57){
+		test.game._dropInterval = 300
 	}
 
 	size_update()
@@ -714,7 +715,7 @@ function getTopScores(e) {
     var rows = [],
         data = data.sort((a,b)=>b[2]-a[2])
     var str = data.reduce(function(s, row,i) {
-      if (row[0] && row[1] && row[2]) {
+      if (row[0] && row[1] && row[2]){
         s += '<tr>' +
           '<td>' + (i+1) + '</td>' +
           '<td>' + row[1] + '</td>' +
@@ -736,3 +737,4 @@ function submission(){
 	setTimeout(function(){$('input[name=Name]').val("")}, 3000);
 	M.Sidenav.getInstance($(".sidenav")).open()
 }
+
