@@ -424,12 +424,12 @@ class Columns{
 		this._bg = 'rgb(255,255,255)'
 		this._contrast = 'rgb(33,33,40)' 
 		this._turquoise = "rgb(136,250,236)"
-		this._blue = "rgb(0,0,250)"
-		this._red = "rgb(250,0,0)"
-		this._green = "rgb(0,250,0)"
-		this._orange = "rgb(250,165,0)"
-		this._purple = "rgb(170,0,250)"
-		this._yellow = "rgb(250,250,0)"
+		this._blue = "rgb(118,158,203)"
+		this._red = "rgb(254,107,100)"
+		this._green = "rgb(68,211,98)"
+		this._orange = "rgb(254,203,165)"
+		this._purple = "rgb(149,125,173)"
+		this._yellow = "rgb(255,255,207)"
 		this._next = null
 		this.game = new Game()
 		this.game.new_game_board()
