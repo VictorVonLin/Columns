@@ -427,9 +427,9 @@ class Columns{
 		this._blue = "rgb(118,158,203)"
 		this._red = "rgb(254,107,100)"
 		this._green = "rgb(68,211,98)"
-		this._orange = "rgb(254,203,165)"
+		this._orange = "rgb(255,179,71)"
 		this._purple = "rgb(149,125,173)"
-		this._yellow = "rgb(255,255,207)"
+		this._yellow = "rgb(253,253,150)"
 		this._next = null
 		this.game = new Game()
 		this.game.new_game_board()
